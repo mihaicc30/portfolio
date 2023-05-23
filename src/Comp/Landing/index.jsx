@@ -88,7 +88,7 @@ const Landing = ({ fromDB }) => {
 				<Icon img="./assets/Icons/TW.png" />
 				<Icon img="./assets/Icons/NODE.png" />
 				<Icon img="./assets/Icons/API.png" />
-				<Icon img="./assets/Icons/PY.png" />
+				<Icon img="./assets/Icons/PYT.png" />
 				<Icon img="./assets/Icons/ML.png" />
 				<Icon img="./assets/Icons/MYSQL.png" />
 				<Icon img="./assets/Icons/SEQ.png" />

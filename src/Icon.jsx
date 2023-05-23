@@ -5,7 +5,7 @@ const Icon = ({img, delay}) => {
   const getTitle = () => {
     if (img.includes('Icons/ML.png')) {
       return 'Machine Learning';
-    } else if (img.includes('PY')) {
+    } else if (img.includes('PYT')) {
       return 'Python';
     } else if (img.includes('Android')) {
       return 'Android';
@@ -43,6 +43,8 @@ const Icon = ({img, delay}) => {
       return 'Stripe Payments';
     } else if (img.includes('TW')) {
       return 'TailwindCSS';
+    } else if (img.includes('PYGAME')) {
+      return 'PYGAME';
     } else {
       return '';
     }

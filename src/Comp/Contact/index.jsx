@@ -4,11 +4,11 @@ import { db } from "../../App.jsx";
 import { collection, addDoc } from "firebase/firestore";
 
 const Contact = () => {
-  const [err, setErr] = useState({
-    name:"",
-    email:"",
-    message:"",
-  })
+	const [err, setErr] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
 
 	const sendEmail = (name, email, message) => {
 		addDoc(collection(db, "messages"), {
@@ -21,52 +21,52 @@ const Contact = () => {
 	};
 
 	const validate = async (n, e, m) => {
-    setErr({
-      name:"",
-      email:"",
-      message:"",
-    })
+		setErr({
+			name: "",
+			email: "",
+			message: "",
+		});
 		console.log(n, e, m);
-    let isValid = true;
+		let isValid = true;
 
-    if (n.length < 3) {
-      setErr((prevErrors) => ({
-        ...prevErrors,
-        name: "Name too short.",
-      }));
-      isValid = false;
-    }
+		if (n.length < 3) {
+			setErr((prevErrors) => ({
+				...prevErrors,
+				name: "Name too short.",
+			}));
+			isValid = false;
+		}
 
-    let emailRegex =
-    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+		let emailRegex =
+			/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    if (!e) {
-      setErr((prevErrors) => ({
-        ...prevErrors,
-        email: "Email required.",
-      }));
-      isValid = false;
-    } else if (!emailRegex.test(e)) {
-      setErr((prevErrors) => ({
-        ...prevErrors,
-        email: "Email invalid.",
-      }));
-      isValid = false;
-    }
+		if (!e) {
+			setErr((prevErrors) => ({
+				...prevErrors,
+				email: "Email required.",
+			}));
+			isValid = false;
+		} else if (!emailRegex.test(e)) {
+			setErr((prevErrors) => ({
+				...prevErrors,
+				email: "Email invalid.",
+			}));
+			isValid = false;
+		}
 
-    if(m.length < 1) {
-      setErr((prevErrors) => ({
-        ...prevErrors,
-        message: "Message required.",
-      }));
-      isValid = false;
-    } else if (m.length < 3) {
-      setErr((prevErrors) => ({
-        ...prevErrors,
-        message: "Message too short.",
-      }));
-      isValid = false;
-    }
+		if (m.length < 1) {
+			setErr((prevErrors) => ({
+				...prevErrors,
+				message: "Message required.",
+			}));
+			isValid = false;
+		} else if (m.length < 3) {
+			setErr((prevErrors) => ({
+				...prevErrors,
+				message: "Message too short.",
+			}));
+			isValid = false;
+		}
 
 		return isValid;
 	};
@@ -120,11 +120,11 @@ const Contact = () => {
 	};
 
 	const handleFormReset = () => {
-    setErr({
-      name:"",
-      email:"",
-      message:"",
-    })
+		setErr({
+			name: "",
+			email: "",
+			message: "",
+		});
 		refName.current.value = "";
 		refEmail.current.value = "";
 		refMessage.current.value = "";
@@ -192,12 +192,20 @@ const Contact = () => {
 					<input ref={refName} required type="text" id="name" name="name" />
 					<label>Name*</label>
 				</div>
-          {err.name && <span className="animate-fadeUP1 text-[--accentcolor]">{err.name}</span>}
+				{err.name && (
+					<span className="animate-fadeUP1 text-[--accentcolor]">
+						{err.name}
+					</span>
+				)}
 				<div className="styled-input">
 					<input ref={refEmail} required type="text" id="email" name="email" />
 					<label>Email*</label>
 				</div>
-        {err.email && <span className="animate-fadeUP1 text-[--accentcolor]">{err.email}</span>}
+				{err.email && (
+					<span className="animate-fadeUP1 text-[--accentcolor]">
+						{err.email}
+					</span>
+				)}
 				<div className="styled-input h-[200px]">
 					<textarea
 						ref={refMessage}
@@ -207,10 +215,13 @@ const Contact = () => {
 						name="message"
 						cols="22"
 						className="h-[200px]"></textarea>
-					<label>Message*
-        </label>
+					<label>Message*</label>
 				</div>
-        {err.message && <span className="animate-fadeUP1 text-[--accentcolor]">{err.message}</span>}
+				{err.message && (
+					<span className="animate-fadeUP1 text-[--accentcolor]">
+						{err.message}
+					</span>
+				)}
 
 				<div className="styled-input w-100">
 					<button type="submit" className="bg-[--lightthemecolor] text-black">

@@ -52,6 +52,7 @@ const fromDB = [
 		tags: [
 			{el: <Icon img="./assets/Icons/JS.png" /> },
 			{el: <Icon img="./assets/Icons/Bootstrap.png" /> },
+			{el: <Icon img="./assets/Icons/NODE.png" /> },
 			{el: <Icon img="./assets/Icons/MONGO.png" /> },
 			{el: <Icon img="./assets/Icons/API.png" /> },
 			{el: <Icon img="./assets/Icons/STRIPE.png" />},
@@ -65,6 +66,7 @@ const fromDB = [
 			{el: <Icon img="./assets/Icons/JS.png" /> },
 			{el: <Icon img="./assets/Icons/Bootstrap.png" /> },
 			{el: <Icon img="./assets/Icons/API.png" /> },
+			{el: <Icon img="./assets/Icons/NODE.png" /> },
 			{el: <Icon img="./assets/Icons/Android.png" /> },
 			{el: <Icon img="./assets/Icons/Cordova.png" /> },
 			{el: <Icon img="./assets/Icons/STRIPE.png" />},
@@ -78,6 +80,8 @@ const fromDB = [
 			{el: <Icon img="./assets/Icons/JS.png" /> },
 			{el: <Icon img="./assets/Icons/RE.png" /> },
 			{el: <Icon img="./assets/Icons/NODE.png" /> },
+			{el: <Icon img="./assets/Icons/FB.png" /> },
+			{el: <Icon img="./assets/Icons/TW.png" /> },
 			{el: <Icon img="./assets/Icons/API.png" /> },
 			{el: <Icon img="./assets/Icons/STRIPE.png" />},
 		],
@@ -87,13 +91,22 @@ const fromDB = [
 		name: "Hippos POS",
 		img: "../../assets/ProjectSS/Hippos.JPG",
 		tags: [
-			{el: <Icon img="./assets/Icons/PY.png" /> },
+			{el: <Icon img="./assets/Icons/PYT.png" /> },
 			{el: <Icon img="./assets/Icons/API.png" /> },
 			{el: <Icon img="./assets/Icons/MYSQL.png" /> },
 		],
 		link: "https://hippos.netlify.app/",
 		info: "Project Source Code and Instructions on GitHub:",
 		infolink: "https://github.com/mihaicc30/Hippos",
+	},
+	{
+		name: "Tank VS UFOs",
+		img: "../../assets/ProjectSS/TANKVSUFOS.JPG",
+		tags: [
+			{el: <Icon img="./assets/Icons/PYT.png" /> },
+			{el: <Icon img="./assets/Icons/PYGAME.png" /> },
+		],
+		link: "https://github.com/mihaicc30/tankvsufos",
 	},
 ];
 
