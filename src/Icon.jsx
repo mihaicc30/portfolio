@@ -7,6 +7,8 @@ const Icon = ({img, delay}) => {
       return 'Machine Learning';
     } else if (img.includes('PYT')) {
       return 'Python';
+    } else if (img.includes('LARA')) {
+      return 'Laravel';
     } else if (img.includes('Android')) {
       return 'Android';
     } else if (img.includes('API')) {
