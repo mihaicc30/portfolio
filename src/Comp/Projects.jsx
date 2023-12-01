@@ -1,8 +1,7 @@
 import React , {useEffect} from "react";
-import "./index.css";
 import { NavLink } from "react-router-dom";
 
-import Icon from "../../Icon.jsx";
+import Icon from "../Icon.jsx";
 
 const Projects = ({ fromDB }) => {
 	useEffect(() => {

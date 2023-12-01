@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import "./index.css";
 
 const Nav = () => {
 	const [darkMode, setDarkMode] = useState(true);

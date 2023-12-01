@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./index.css";
-import { db } from "../../App.jsx";
+import { db } from "../App.jsx";
+import "../index.css"
 import { collection, addDoc } from "firebase/firestore";
 
 const Contact = () => {
@@ -206,7 +206,7 @@ const Contact = () => {
 						{err.email}
 					</span>
 				)}
-				<div className="styled-input h-[200px]">
+				<div className="styled-input h-[200px!important]">
 					<textarea
 						ref={refMessage}
 						required
