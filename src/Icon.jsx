@@ -5,6 +5,10 @@ const Icon = ({img, delay}) => {
   const getTitle = () => {
     if (img.includes('Icons/ML.png')) {
       return 'Machine Learning';
+    } else if (img.includes('TS')) {
+      return 'TypeScript';
+    } else if (img.includes('NJS')) {
+      return 'NextJS';
     } else if (img.includes('PYT')) {
       return 'Python';
     } else if (img.includes('LARA')) {

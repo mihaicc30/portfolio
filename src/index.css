@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  font-family: cursive;
+  font-family: sans-serif;
 }
+
 :root {
-  max-width: 1000px;
+  --darkthemecolor: #201b39;
+  --c2: #2b2950;
+  --c3: #3c2e6c;
+  --c4: #3395e0;
+  --c5: #3683d1;
+  --c6: #3c3579;
+  --c7: #f7f8f3;
+  --c8: #dfe5e5;
+  /* max-width: 1000px; */
   margin: 0 auto;
   --c: rgb(22, 22, 22);
-  --darkthemecolor: #00050f;
+  /* --darkthemecolor: #00050f; */
   --lightthemecolor: #e2e1e1;
   --accentcolor: #e09201;
 }
@@ -20,6 +29,7 @@ body {
 .active {
   color: var(--accentcolor) !important;
 }
+
 /* .nav-link {
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -48,216 +58,333 @@ body {
   }
 }
 
-
-
 .styled-input {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 50px;
-    margin-top: 10px;
-  }
-  .styled-input input {
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    background-color: var(--lightthemecolor);
-    color: black;
-    border-radius: 14px;
-    padding: 10px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
-    border: 1px solid;
-  }
-  .styled-input textarea {
-    border: 1px solid;
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    background-color: var(--lightthemecolor);
-    color: black;
-    border-radius: 14px;
-    padding: 10px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
-  }
-  .styled-input:not(textarea) label {
-    width: fit-content;
-    color: black;
-    display: inline-block;
-    padding: 10px;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
-    transform: translate(11px, -46px);
-    font-size: 1rem;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -webkit-transform: translate(11px, -46px);
-    -moz-transform: translate(11px, -46px);
-    -ms-transform: translate(11px, -46px);
-    -o-transform: translate(11px, -46px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  margin-top: 10px;
 }
-  .styled-input:has(textarea) label {
-    color: black;
-    display: inline-block;
-    /*background-color: var(--bgg);
-    */-webkit-transition: all 0.25s ease;
-    padding: 0;
-    margin: 0;
-    transition: all 0.25s ease;
-    pointer-events: none;
-    transform: translate(20px, -160px);
-    font-size: 1.2rem;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -webkit-transform: translate(20px, -160px);
-    -moz-transform: translate(20px, -160px);
-    -ms-transform: translate(20px, -160px);
-    -o-transform: translate(20px, -160px);
-    width: fit-content;
+.styled-input input {
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--lightthemecolor);
+  color: black;
+  border-radius: 14px;
+  padding: 10px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border: 1px solid;
 }
-  
-  .styled-input label:focus,
-  .styled-input textarea:focus {
-    outline: 0;
-  }
-  
-  .styled-input input:focus ~ label,
-  .styled-input input:valid ~ label {
-    transform: translate(11px, -60px);
-    -webkit-transform: translate(11px, -60px);
-    -moz-transform: translate(11px, -60px);
-    -ms-transform: translate(11px, -60px);
-    -o-transform: translate(11px, -60px);
-    background-color: var(--lightthemecolor);
-    border-radius: 6px 6px 0 0;
-    padding: 0 15px;
-    font-size: smaller;
-    width: fit-content;
-    -webkit-border-radius: 6px 6px 0 0;
-    -moz-border-radius: 6px 6px 0 0;
-    -ms-border-radius: 6px 6px 0 0;
-    -o-border-radius: 6px 6px 0 0;
+.styled-input textarea {
+  border: 1px solid;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--lightthemecolor);
+  color: black;
+  border-radius: 14px;
+  padding: 10px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
 }
-  .styled-input textarea:valid ~ label,
-  .styled-input textarea:focus ~ label {
-    transform: translate(11px, -196px);
-    -webkit-transform: translate(11px, -196px);
-    -moz-transform: translate(11px, -196px);
-    -ms-transform: translate(11px, -196px);
-    -o-transform: translate(11px, -196px);
-    background-color: var(--lightthemecolor);
-    border-radius: 6px 6px 0 0;
-    padding: 0 15px;
-    font-size: smaller;
-    width: fit-content;
+.styled-input:not(textarea) label {
+  width: fit-content;
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  transform: translate(11px, -46px);
+  font-size: 1rem;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transform: translate(11px, -46px);
+  -moz-transform: translate(11px, -46px);
+  -ms-transform: translate(11px, -46px);
+  -o-transform: translate(11px, -46px);
 }
-  .styled-input > button {
-    padding: 1rem 3rem;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border: none;
-    box-shadow: 0px 2px 2px grey;
-  }
-  #smagg {
-    width: unset;
-    margin: 8px;
-  }
-  #fff2,
-  #fff3 {
-    width: 100%;
-  }
-  
-  
-  .ondf > details[open] {
-    transition: 0.5s ease all;
-    /* background-color: lightgray; */
-    -webkit-transition: 0.5s ease all;
-    -moz-transition: 0.5s ease all;
-    -ms-transition: 0.5s ease all;
-    -o-transition: 0.5s ease all;
-  }
-  select:hover {
-    cursor: pointer;
-  }
-  
-  .styled-input-checkout {
-    white-space: nowrap;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: var(--act); */
-    height: auto;
-    padding-top: 20px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-  }
-  .styled-input-checkout input,
-  .styled-input-checkout p {
-    box-shadow: 0px 2px 1px grey;
-    margin-bottom: 6px;
-    background-color: var(--lightthemecolor);
-    /* color: black; */
-    min-width: 200px;
-    border-radius: 20px;
-    padding: 10px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-  }
-  body > div.productDetails > div > div:nth-child(7) > p{
-    white-space: break-spaces;
-  }
-  .styled-input-checkout label {
-    /* color: black; */
-    position: absolute;
-    display: inline-block;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
-    transform: translate(0px, -14px);
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -webkit-transform: translate(0px, -14px);
-    -moz-transform: translate(0px, -14px);
-    -ms-transform: translate(0px, -14px);
-    -o-transform: translate(0px, -14px);
-    padding: 0 10px;
-    border-radius: 20px;
-    /* background-color: var(--act); */
-    font-size: large;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-  }
-  
+.styled-input:has(textarea) label {
+  color: black;
+  display: inline-block;
+  /*background-color: var(--bgg);
+    */
+  -webkit-transition: all 0.25s ease;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  transform: translate(20px, -160px);
+  font-size: 1.2rem;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transform: translate(20px, -160px);
+  -moz-transform: translate(20px, -160px);
+  -ms-transform: translate(20px, -160px);
+  -o-transform: translate(20px, -160px);
+  width: fit-content;
+}
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus {
-    border: 1px solid;
-    -webkit-text-fill-color: black;
-    -webkit-box-shadow: 0 0 0px 1000px var(--lightthemecolor) inset;
-    transition: background-color ease-in-out 0s;
-    -webkit-transition: background-color ease-in-out 0s;
-    -moz-transition: background-color ease-in-out 0s;
-    -ms-transition: background-color ease-in-out 0s;
-    -o-transition: background-color ease-in-out 0s;
+.styled-input label:focus,
+.styled-input textarea:focus {
+  outline: 0;
 }
+
+.styled-input input:focus ~ label,
+.styled-input input:valid ~ label {
+  transform: translate(11px, -60px);
+  -webkit-transform: translate(11px, -60px);
+  -moz-transform: translate(11px, -60px);
+  -ms-transform: translate(11px, -60px);
+  -o-transform: translate(11px, -60px);
+  background-color: var(--lightthemecolor);
+  border-radius: 6px 6px 0 0;
+  padding: 0 15px;
+  font-size: smaller;
+  width: fit-content;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+.styled-input textarea:valid ~ label,
+.styled-input textarea:focus ~ label {
+  transform: translate(11px, -196px);
+  -webkit-transform: translate(11px, -196px);
+  -moz-transform: translate(11px, -196px);
+  -ms-transform: translate(11px, -196px);
+  -o-transform: translate(11px, -196px);
+  background-color: var(--lightthemecolor);
+  border-radius: 6px 6px 0 0;
+  padding: 0 15px;
+  font-size: smaller;
+  width: fit-content;
+}
+.styled-input > button {
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: none;
+  box-shadow: 0px 2px 2px grey;
+}
+#smagg {
+  width: unset;
+  margin: 8px;
+}
+#fff2,
+#fff3 {
+  width: 100%;
+}
+
+.ondf > details[open] {
+  transition: 0.5s ease all;
+  /* background-color: lightgray; */
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+select:hover {
+  cursor: pointer;
+}
+
+.styled-input-checkout {
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--act); */
+  height: auto;
+  padding-top: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.styled-input-checkout input,
+.styled-input-checkout p {
+  box-shadow: 0px 2px 1px grey;
+  margin-bottom: 6px;
+  background-color: var(--lightthemecolor);
+  /* color: black; */
+  min-width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+body > div.productDetails > div > div:nth-child(7) > p {
+  white-space: break-spaces;
+}
+.styled-input-checkout label {
+  /* color: black; */
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  transform: translate(0px, -14px);
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transform: translate(0px, -14px);
+  -moz-transform: translate(0px, -14px);
+  -ms-transform: translate(0px, -14px);
+  -o-transform: translate(0px, -14px);
+  padding: 0 10px;
+  border-radius: 20px;
+  /* background-color: var(--act); */
+  font-size: large;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 1px solid;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px var(--lightthemecolor) inset;
+  transition: background-color ease-in-out 0s;
+  -webkit-transition: background-color ease-in-out 0s;
+  -moz-transition: background-color ease-in-out 0s;
+  -ms-transition: background-color ease-in-out 0s;
+  -o-transition: background-color ease-in-out 0s;
+}
+
+#carru {
+  --image-size: min(max(20px, 2vw), 40px);
+  padding: 1px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+}
+
+#carru div {
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  justify-content: space-around;
+  animation: marquee 1s linear infinite;
+  -webkit-animation: marquee 1s linear infinite;
+  width: 100%;
+}
+
+#carru > div > span {
+  display: block;
+  min-width: var(--image-size);
+  height: var(--image-size);
+  margin: 0 1vw;
+}
+
+@media (max-width: 900px) {
+  #carru {
+    --image-size: min(max(20px, 2vw), 40px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+
+.cloud {
+  background: rgba(255, 255, 255);
+  width: 300px; 
+  height: 100px;
+  border-radius: 150px;	
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  animation: move 3s infinite;
+}
+
+.cloud:after {
+  content: '';
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+}
+
+.cloud:before {
+  content: '';
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-50%) scale(0.1);
+  }
+  50% {
+    transform: translateX(-60%) scale(0.1);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.1);
+  }
+}
+
+
+/* Custom styles for Webkit browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+  margin: 10px 0;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Change the color as needed */
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #cbd5e0; /* Change the color as needed */
+  margin: 10px;
+  border-radius: 50px;
+}
+
+/* Custom styles for non-Webkit browsers */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #cbd5e0; /* Change the colors as needed */
+}
+

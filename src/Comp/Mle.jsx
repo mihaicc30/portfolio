@@ -23,7 +23,7 @@ const Mle = () => {
       <span className="border-2 border-dashed relative flex justify-center items-center">
         <span className="absolute bg-orange-600 h-3 w-3 rounded-full mt-2"></span>
       </span>
-      <span className="px-4  mt-2">👨‍🎓 Enrolled into Computer Science at Solent University</span>
+      <span className="px-4  mt-2">👨‍🎓 Computer Science Student</span>
       {/*  */}
       <span className="px-4 text-end"></span>
       <span className="border-2 border-dashed relative flex justify-center items-center h-4"></span>
@@ -33,7 +33,7 @@ const Mle = () => {
       <span className="border-2 border-dashed relative flex justify-center items-center">
         <span className="absolute bg-orange-600 h-3 w-3 rounded-full mt-2"></span>
       </span>
-      <span className="px-4  mt-2">🙆‍♂️ Decided a career change</span>
+      <span className="px-4  mt-2">🙆‍♂️ Career change</span>
       {/*  */}
       <span className="px-4 text-end"></span>
       <span className="border-2 border-dashed relative flex justify-center items-center h-4"></span>
