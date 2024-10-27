@@ -1,64 +1,66 @@
 import React from 'react'
 
-const Icon = ({img, delay}) => {
+const Icon = ({ img, delay }) => {
   let thedelay = delay ? delay : 0
   const getTitle = () => {
     if (img.includes('Icons/ML.png')) {
-      return 'Machine Learning';
+      return 'Machine Learning'
     } else if (img.includes('TS')) {
-      return 'TypeScript';
+      return 'TypeScript'
     } else if (img.includes('NJS')) {
-      return 'NextJS';
+      return 'NextJS'
     } else if (img.includes('PYT')) {
-      return 'Python';
+      return 'Python'
     } else if (img.includes('LARA')) {
-      return 'Laravel';
+      return 'Laravel'
     } else if (img.includes('Android')) {
-      return 'Android';
+      return 'Android'
     } else if (img.includes('API')) {
-      return 'API';
+      return 'API'
     } else if (img.includes('Bootstrap')) {
-      return 'Bootstrap';
+      return 'Bootstrap'
     } else if (img.includes('Cordova')) {
-      return 'Cordova';
+      return 'Cordova'
     } else if (img.includes('CSS')) {
-      return 'CSS';
+      return 'CSS'
     } else if (img.includes('FB')) {
-      return 'Firebase';
+      return 'Firebase'
     } else if (img.includes('GH')) {
-      return 'GitHub';
+      return 'GitHub'
     } else if (img.includes('HTML')) {
-      return 'HTML';
+      return 'HTML'
     } else if (img.includes('JS')) {
-      return 'Javascript';
+      return 'Javascript'
     } else if (img.includes('LI')) {
-      return 'LinkedIn';
+      return 'LinkedIn'
     } else if (img.includes('MG')) {
-      return 'Mongoose';
+      return 'Mongoose'
     } else if (img.includes('MONGO')) {
-      return 'MongoDB';
+      return 'MongoDB'
     } else if (img.includes('MYSQL')) {
-      return 'MySQL';
+      return 'MySQL'
     } else if (img.includes('NODE')) {
-      return 'NodeJS';
+      return 'NodeJS'
     } else if (img.includes('RE')) {
-      return 'ReactJS';
+      return 'ReactJS'
     } else if (img.includes('SEQ')) {
-      return 'Sequelize';
+      return 'Sequelize'
     } else if (img.includes('STRIPE')) {
-      return 'Stripe Payments';
+      return 'Stripe Payments'
     } else if (img.includes('TW')) {
-      return 'TailwindCSS';
+      return 'TailwindCSS'
     } else if (img.includes('PYGAME')) {
-      return 'PYGAME';
+      return 'PYGAME'
     } else {
-      return '';
+      return ''
     }
-  };
+  }
 
   return (
-  
-    <img src={img} className="h-[50px] w-[50px] hover:cursor-pointer animate-fadeUPX rounded" style={{ animationDuration: `${thedelay}s` }} title={getTitle()}
+    <img
+      src={img}
+      className='h-[50px] w-[50px] hover:cursor-pointer rounded ani-before ani-start'
+      title={getTitle()}
     />
   )
 }

@@ -1,6 +1,6 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import Nav from "./Comp/Nav";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Nav from './Comp/Nav'
 
 const Layout = () => {
   return (
@@ -8,7 +8,7 @@ const Layout = () => {
       <Nav />
       <Outlet />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

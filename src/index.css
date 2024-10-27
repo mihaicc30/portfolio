@@ -24,7 +24,9 @@
 body {
   background-color: var(--darkthemecolor);
   color: var(--lightthemecolor);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 .active {
   color: var(--accentcolor) !important;
@@ -320,13 +322,12 @@ input:-webkit-autofill:focus {
   }
 }
 
-
 .cloud {
   background: rgba(255, 255, 255);
-  width: 300px; 
+  width: 300px;
   height: 100px;
-  border-radius: 150px;	
-  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
   animation: move 3s infinite;
 }
 
@@ -364,7 +365,6 @@ input:-webkit-autofill:focus {
   }
 }
 
-
 /* Custom styles for Webkit browsers (Chrome, Safari) */
 *::-webkit-scrollbar {
   margin: 10px 0;
@@ -388,3 +388,55 @@ input:-webkit-autofill:focus {
   scrollbar-color: #4a5568 #cbd5e0; /* Change the colors as needed */
 }
 
+.ani-before {
+  scale: 0.8;
+  opacity: 0;
+}
+
+.ani-start {
+  animation: fade-in forwards;
+  animation-timeline: view();
+  animation-range-start: cover 50px;
+  animation-range-end: cover 50svh;
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.header-ani-before {
+  scale: 1;
+  top: 1rem;
+}
+
+.header-ani-after {
+  transform-origin: top;
+  animation: header-fade-out linear forwards !important;
+  animation-timeline: view() !important;
+  animation-range-start: contain 90vh !important;
+  animation-range-end: exit 20vh !important ;
+}
+
+@keyframes header-fade-out {
+  0% {
+  }
+  80% {
+    scale: 5;
+    opacity: 0.3;
+    transform: translateY(5vh);
+    z-index: -1 !important;
+  }
+  100% {
+    scale: 5;
+    opacity: 0;
+    transform: translateY(10vh);
+    z-index: -1 !important;
+  }
+}
