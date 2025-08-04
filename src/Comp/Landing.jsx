@@ -146,7 +146,7 @@ const Landing = ({ fromDB }) => {
             <p
               className='animate-fadeUPX'
               style={{ animationDuration: `1s` }}>
-              and a passionate Web Developer.
+              and a passionate Software Developer.
             </p>
             <div className='inline-flex gap-4 w-100 my-2'>
               <a
@@ -169,7 +169,7 @@ const Landing = ({ fromDB }) => {
               </a>
             </div>
             <a
-              href='../../assets/CV Mihai Culea.docx'
+              href='./assets/CV Mihai Culea.pdf'
               download
               className=' px-6 py-2 bg-[--accentcolor] rounded-xl my-2 flex justify-between  animate-fadeUPX'
               style={{ animationDuration: `1.9s` }}>
@@ -188,6 +188,7 @@ const Landing = ({ fromDB }) => {
           <span className='font-bol my-auto font-black text-3xl translate-y-[-4px] ani-before ani-start'>|</span>
           <Icon img='./assets/Icons/JS.png' />
           <Icon img='./assets/Icons/TS.png' />
+          <Icon img='./assets/Icons/VUE.png' />
           <Icon img='./assets/Icons/RE.png' />
           <Icon img='./assets/Icons/RN.png' />
           <Icon img='./assets/Icons/NJS.png' />
@@ -199,6 +200,8 @@ const Landing = ({ fromDB }) => {
           <Icon img='./assets/Icons/API.png' />
           <Icon img='./assets/Icons/PYT.png' />
           <Icon img='./assets/Icons/ML.png' />
+          <Icon img='./assets/Icons/PHP.png' />
+          <Icon img='./assets/Icons/CI.png' />
           <Icon img='./assets/Icons/LARA.png' />
           <Icon img='./assets/Icons/MYSQL.png' />
           <Icon img='./assets/Icons/SEQ.png' />
@@ -208,6 +211,7 @@ const Landing = ({ fromDB }) => {
           <Icon img='./assets/Icons/GH.png' />
           <Icon img='./assets/Icons/STRIPE.png' />
           <Icon img='./assets/Icons/Cordova.png' />
+          <Icon img='./assets/Icons/WS.png' />
         </div>
 
         <div className='flex justify-center gap-[5vw] mx-[5vw] my-[25vh] max-[934px]:items-center max-[934px]:flex-col ani-before ani-start'>

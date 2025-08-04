@@ -2,7 +2,17 @@ import React from 'react'
 
 const Mle = () => {
   return (
-    <div className='grid grid-cols-[1fr_2px_2fr] gap-1 mt-4'>
+    <div className='grid grid-cols-[1fr_2px_1fr] gap-1 mt-4 text-2xl'>
+      {/*  */}
+      <span className='ani-before ani-start px-4 text-end'></span>
+      <span className='ani-before ani-start border-2 border-dashed relative flex justify-center items-center h-4'></span>
+      <span className='ani-before ani-start px-4'></span>   
+      {/*  */}
+      <span className='ani-before ani-start px-4 mt-2 text-end'>2024</span>
+      <span className='ani-before ani-start border-2 border-dashed relative flex justify-center items-center'>
+        <span className='ani-before ani-start absolute bg-orange-600 h-3 w-3 rounded-full mt-2'></span>
+      </span>
+      <span className='ani-before ani-start px-4 mt-2'>💼 New Job </span>
       {/*  */}
       <span className='ani-before ani-start px-4 text-end'></span>
       <span className='ani-before ani-start border-2 border-dashed relative flex justify-center items-center h-4'></span>

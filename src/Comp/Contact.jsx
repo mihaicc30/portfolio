@@ -144,7 +144,7 @@ const Contact = () => {
           ref={ref4}
           className='w-[300px] text-center h-[10px] rounded-xl animate-fadeOUT'>
           <p className='font-bold text-3xl'>Message Sent!</p>
-          <p>Thank you very much your message has been successfully sent and will be dealt with asap!</p>
+          <p>Thank you! Your message has been received and will be handled as soon as possible.</p>
 
           <button
             ref={ref5}

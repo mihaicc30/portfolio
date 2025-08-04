@@ -51,7 +51,22 @@ const Icon = ({ img, delay }) => {
       return 'TailwindCSS'
     } else if (img.includes('PYGAME')) {
       return 'PYGAME'
-    } else {
+    } else if (img.includes('PHP')) {
+      return 'PHP'
+    } else if (img.includes('WS')) {
+      return 'WebSocket'
+    } else if (img.includes('CI')) {
+      return 'CodeIgniter'
+    } else if (img.includes('VUE')) {
+      return 'Vue.JS'
+    } 
+    
+    
+    
+    
+    
+    
+    else {
       return ''
     }
   }
