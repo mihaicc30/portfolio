@@ -231,8 +231,8 @@ const Landing = ({ fromDB }) => {
             <p className='text-[--accentcolor] font-black tracking-[6px]'>ABOUT ME</p>
             <p className='font-bold text-xl'>Outside of work and academics,</p>
             <p>
-              An enthusiast of drone videography and bike riding, I have a self-taught skill set in video editing and
-              post-production.
+              I enjoy drone videography 🛸, cycling 🚲, and keeping active with occasional gym sessions 💪 during the week. These
+              activities help me recharge 🕊️ and stay balanced outside of my technical work.
             </p>
           </div>
         </div>
