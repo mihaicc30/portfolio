@@ -43,7 +43,7 @@ function App() {
         { el: <Icon img='./assets/Icons/API.png' /> },
         { el: <Icon img='./assets/Icons/WS.png' /> },
       ],
-      link: 'https://fimiar-v2.fly.dev/',
+      link: 'https://fimiar-demo-epos.web.app/',
     },
     {
       name: 'Point Of Sale App',
