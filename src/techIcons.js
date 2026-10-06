@@ -1,0 +1,25 @@
+const techIcons = {
+  JavaScript: '/assets/Icons/JS.png',
+  TypeScript: '/assets/Icons/TS.png',
+  React: '/assets/Icons/RE.png',
+  'React Native': '/assets/Icons/RN.png',
+  Vue: '/assets/Icons/VUE.png',
+  'Node.js': '/assets/Icons/NODE.png',
+  Tailwind: '/assets/Icons/TW.png',
+  PHP: '/assets/Icons/PHP.png',
+  Python: '/assets/Icons/PYT.png',
+  CodeIgniter: '/assets/Icons/CI.png',
+  Laravel: '/assets/Icons/LARA.png',
+  'PHP / Laravel': '/assets/Icons/LARA.png',
+  MySQL: '/assets/Icons/MYSQL.png',
+  MongoDB: '/assets/Icons/MONGO.png',
+  Firebase: '/assets/Icons/FB.png',
+  'REST APIs': '/assets/Icons/API.png',
+  WebSocket: '/assets/Icons/WS.png',
+  Stripe: '/assets/Icons/STRIPE.png',
+  Android: '/assets/Icons/Android.png',
+  iOS: '/assets/Icons/IOS.png',
+  Pygame: '/assets/Icons/PYGAME.png',
+}
+
+export default techIcons
